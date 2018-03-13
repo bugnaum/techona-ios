@@ -26,9 +26,9 @@ class HomeViewModel {
     }
     
     func load() {
-        MockedButtonRequest().request { buttons, error in
-            self.buttons = buttons
-            self.delegate?.didLoadContent(message: error?.message)
+        MockedButtonRequest().request { [weak self] buttons, error in
+            self?.buttons = buttons
+            self?.delegate?.didLoadContent(message: error?.message)
         }
     }
     
