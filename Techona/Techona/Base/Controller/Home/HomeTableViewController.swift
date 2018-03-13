@@ -12,7 +12,7 @@ protocol LoadContent: class {
     func didLoadContent(message: String?)
 }
 
-class HomeTableViewController: UITableViewController, LoadContent {
+class HomeTableViewController: UITableViewController, LoadContent, TapButton {
 
     private lazy var viewModel: HomeViewModel = HomeViewModel(delegate: self)
     
@@ -44,15 +44,15 @@ class HomeTableViewController: UITableViewController, LoadContent {
         switch viewModel.typeForRow(index: indexPath.row) {
         case .center:
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: CenterButtonCell.self), for: indexPath) as? CenterButtonCell
-            cell?.fill(dto: viewModel.dtoForRow(index: indexPath.row))
+            cell?.fill(dto: viewModel.dtoForRow(index: indexPath.row), delegate: self)
             return cell ?? UITableViewCell()
         case .left:
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: LeftButtonCell.self), for: indexPath) as? LeftButtonCell
-            cell?.fill(dto: viewModel.dtoForRow(index: indexPath.row))
+            cell?.fill(dto: viewModel.dtoForRow(index: indexPath.row), delegate: self)
             return cell ?? UITableViewCell()
         case .right:
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: RightButtonCell.self), for: indexPath) as? RightButtonCell
-            cell?.fill(dto: viewModel.dtoForRow(index: indexPath.row))
+            cell?.fill(dto: viewModel.dtoForRow(index: indexPath.row), delegate: self)
             return cell ?? UITableViewCell()
         }
     }
@@ -69,5 +69,10 @@ class HomeTableViewController: UITableViewController, LoadContent {
         DispatchQueue.main.async {
             self.tableView.reloadData()
         }
+    }
+    
+    // MARK: - TapButton
+    func didTapButton(name: String) {
+        showDefaultAlert(message: name, completeBlock: nil)
     }
 }

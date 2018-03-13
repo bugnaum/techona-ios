@@ -12,9 +12,15 @@ class LeftButtonCell: UITableViewCell {
 
     @IBOutlet weak var companyNameLabel: UILabel!
     @IBOutlet weak var leftButton: UIButton!
+    private weak var delegate: TapButton?
     
-    func fill(dto: ComponentCellDTO) {
+    func fill(dto: ComponentCellDTO, delegate: TapButton) {
+        self.delegate = delegate
         companyNameLabel.text = dto.companyName
         leftButton.setTitle(dto.buttonTitle, for: .normal)
+    }
+    
+    @IBAction func showAlert() {
+        delegate?.didTapButton(name: leftButton.titleLabel?.text ?? "")
     }
 }

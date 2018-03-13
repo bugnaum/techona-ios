@@ -12,9 +12,15 @@ class CenterButtonCell: UITableViewCell {
 
     @IBOutlet weak var companyNameLabel: UILabel!
     @IBOutlet weak var centerButton: UIButton!
+    private weak var delegate: TapButton?
     
-    func fill(dto: ComponentCellDTO) {
+    func fill(dto: ComponentCellDTO, delegate: TapButton) {
+        self.delegate = delegate
         companyNameLabel.text = dto.companyName
         centerButton.setTitle(dto.buttonTitle, for: .normal)
+    }
+    
+    @IBAction func showAlert() {
+        delegate?.didTapButton(name: centerButton.titleLabel?.text ?? "")
     }
 }

@@ -13,3 +13,7 @@ struct ComponentCellDTO {
     var companyName = ""
     var buttonTitle = ""
 }
+
+protocol TapButton: class {
+    func didTapButton(name: String)
+}

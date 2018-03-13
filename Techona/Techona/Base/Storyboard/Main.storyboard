@@ -42,6 +42,9 @@
                                                 <constraint firstAttribute="width" constant="147" id="u3K-PA-0Qd"/>
                                             </constraints>
                                             <state key="normal" title="Button"/>
+                                            <connections>
+                                                <action selector="showAlert" destination="vH8-iw-lbY" eventType="touchUpInside" id="cSs-Gc-6fx"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <constraints>
@@ -80,6 +83,9 @@
                                                 <constraint firstAttribute="width" constant="139" id="yak-O8-QSE"/>
                                             </constraints>
                                             <state key="normal" title="Button"/>
+                                            <connections>
+                                                <action selector="showAlert" destination="RGC-Uw-RTj" eventType="touchUpInside" id="IqI-hb-Q13"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <constraints>
@@ -119,6 +125,9 @@
                                                 <constraint firstAttribute="width" constant="139" id="5Qa-yr-n96"/>
                                             </constraints>
                                             <state key="normal" title="Button"/>
+                                            <connections>
+                                                <action selector="showAlert" destination="x7Y-Xy-U5r" eventType="touchUpInside" id="GVP-mE-it6"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <constraints>
