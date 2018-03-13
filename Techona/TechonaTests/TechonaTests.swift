@@ -11,26 +11,44 @@ import XCTest
 
 class TechonaTests: XCTestCase {
     
+    var viewModel = HomeViewModel(delegate: HomeTableViewController())
+    
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        viewModel.load()
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testShouwValidateNumberOfRows() {
+        XCTAssertEqual(viewModel.numberOfRows(), 3)
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testShouldValidateNumberOfSections() {
+        XCTAssertEqual(viewModel.numberOfSections(), 1)
     }
     
+    func testShouldValidateDTO() {
+        let dto = viewModel.dtoForRow(index: 0)
+        XCTAssertEqual("Button", dto.buttonTitle)
+        XCTAssertEqual("Apple", dto.companyName)
+    }
+    
+    func testShouldValidateWrongDTO() {
+        let dto = viewModel.dtoForRow(index: 99)
+        XCTAssertEqual("", dto.buttonTitle)
+        XCTAssertEqual("", dto.companyName)
+    }
+    
+    func testShouldValidateType() {
+        let type = viewModel.typeForRow(index: 0)
+        XCTAssertEqual(type, ButtonType.center)
+    }
+    
+    func testShouldValidateWrongType() {
+        let type = viewModel.typeForRow(index: 99)
+        XCTAssertEqual(type, ButtonType.center)
+    }
 }

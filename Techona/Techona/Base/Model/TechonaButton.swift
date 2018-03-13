@@ -22,5 +22,4 @@ struct TechonaButton: Codable {
     var buttonType: ButtonType {
         return ButtonType(rawValue: type) ?? .center
     }
-    
 }
