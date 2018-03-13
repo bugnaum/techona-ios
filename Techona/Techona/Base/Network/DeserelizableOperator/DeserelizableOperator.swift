@@ -8,11 +8,7 @@
 
 import Foundation
 
-precedencegroup ExponentiativePrecedence {
-    associativity: right
-}
-
-infix operator <--> :ExponentiativePrecedence
+infix operator <-->
 
 func <--> <T: Codable>(json: Data?, handle: (type: T.Type, error: Error?)) -> (model: T?, error: CustomError?) {
     

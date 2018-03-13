@@ -14,12 +14,12 @@
         <scene sceneID="KSB-m9-oPg">
             <objects>
                 <tableViewController id="v94-2y-iTg" customClass="HomeTableViewController" customModule="Techona" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="aSb-Y0-fBt">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="aSb-Y0-fBt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="148" id="vH8-iw-lbY" customClass="CenterButtonCell" customModule="Techona" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CenterButtonCell" rowHeight="148" id="vH8-iw-lbY" customClass="CenterButtonCell" customModule="Techona" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="55.5" width="375" height="148"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vH8-iw-lbY" id="2d0-JQ-FPK">
@@ -27,10 +27,9 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apple" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OLc-NC-ura">
-                                            <rect key="frame" x="114" y="25" width="147" height="28"/>
+                                            <rect key="frame" x="165.5" y="25" width="44.5" height="28"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="147" id="IUh-qn-m8m"/>
-                                                <constraint firstAttribute="height" constant="28" id="f15-EB-20H"/>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44.5" id="Wlg-3r-jq6"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -59,7 +58,7 @@
                                     <outlet property="companyNameLabel" destination="OLc-NC-ura" id="vuK-rb-qdP"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="101" id="RGC-Uw-RTj" customClass="LeftButtonCell" customModule="Techona" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LeftButtonCell" rowHeight="101" id="RGC-Uw-RTj" customClass="LeftButtonCell" customModule="Techona" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="203.5" width="375" height="101"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RGC-Uw-RTj" id="uq9-4W-0sd">
@@ -68,6 +67,9 @@
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yahoo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S7Y-At-QZ0">
                                             <rect key="frame" x="296.5" y="23" width="47.5" height="54"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="47.5" id="kfx-Un-Eec"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -75,7 +77,6 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TZE-F6-M9w">
                                             <rect key="frame" x="31" y="23" width="139" height="54"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="54" id="TdW-hG-lWh"/>
                                                 <constraint firstAttribute="width" constant="139" id="yak-O8-QSE"/>
                                             </constraints>
                                             <state key="normal" title="Button"/>
@@ -96,7 +97,7 @@
                                     <outlet property="leftButton" destination="TZE-F6-M9w" id="i4l-l8-0SW"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="111" id="x7Y-Xy-U5r" customClass="RightButtonCell" customModule="Techona" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RightButtonCell" rowHeight="111" id="x7Y-Xy-U5r" customClass="RightButtonCell" customModule="Techona" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="304.5" width="375" height="111"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="x7Y-Xy-U5r" id="WhR-Mr-Aiz">
@@ -105,6 +106,9 @@
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yahoo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbO-w6-m8F">
                                             <rect key="frame" x="31" y="28.5" width="47.5" height="54"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="47.5" id="ehE-dK-RV8"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
