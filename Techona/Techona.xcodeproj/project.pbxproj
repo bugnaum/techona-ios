@@ -12,7 +12,19 @@
 		C30D894A2058056A00A6B6DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C30D89432058056A00A6B6DF /* LaunchScreen.storyboard */; };
 		C30D894B2058056A00A6B6DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C30D89442058056A00A6B6DF /* Main.storyboard */; };
 		C30D894C2058056A00A6B6DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30D89492058056A00A6B6DF /* AppDelegate.swift */; };
-		C30D894E205805FE00A6B6DF /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30D894D205805FE00A6B6DF /* HomeTableViewController.swift */; };
+		C30D895120581A0100A6B6DF /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30D895020581A0100A6B6DF /* HomeTableViewController.swift */; };
+		C30D895320581A0F00A6B6DF /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30D895220581A0F00A6B6DF /* HomeViewModel.swift */; };
+		C30D895620581A3B00A6B6DF /* CenterButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30D895520581A3B00A6B6DF /* CenterButtonCell.swift */; };
+		C30D895820581A4900A6B6DF /* LeftButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30D895720581A4900A6B6DF /* LeftButtonCell.swift */; };
+		C30D895A20581A5700A6B6DF /* RightButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30D895920581A5700A6B6DF /* RightButtonCell.swift */; };
+		C30D895C20581C9700A6B6DF /* ComponentCellDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30D895B20581C9700A6B6DF /* ComponentCellDTO.swift */; };
+		C30D89672058201A00A6B6DF /* techona-buttons.json in Resources */ = {isa = PBXBuildFile; fileRef = C30D89662058201A00A6B6DF /* techona-buttons.json */; };
+		C30D89692058202700A6B6DF /* TechonaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30D89682058202700A6B6DF /* TechonaModel.swift */; };
+		C30D896B2058206F00A6B6DF /* TechonaButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30D896A2058206F00A6B6DF /* TechonaButton.swift */; };
+		C30D896E205821AC00A6B6DF /* DeserelizableOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30D896D205821AC00A6B6DF /* DeserelizableOperator.swift */; };
+		C30D8972205821E400A6B6DF /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30D8971205821E400A6B6DF /* CustomError.swift */; };
+		C30D89752058225C00A6B6DF /* MockedButtonsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30D89742058225C00A6B6DF /* MockedButtonsRequest.swift */; };
+		C30D897A2058228200A6B6DF /* Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30D89792058228200A6B6DF /* Requestable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +47,19 @@
 		C30D89432058056A00A6B6DF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C30D89442058056A00A6B6DF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		C30D89492058056A00A6B6DF /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C30D894D205805FE00A6B6DF /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		C30D895020581A0100A6B6DF /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		C30D895220581A0F00A6B6DF /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		C30D895520581A3B00A6B6DF /* CenterButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterButtonCell.swift; sourceTree = "<group>"; };
+		C30D895720581A4900A6B6DF /* LeftButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftButtonCell.swift; sourceTree = "<group>"; };
+		C30D895920581A5700A6B6DF /* RightButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightButtonCell.swift; sourceTree = "<group>"; };
+		C30D895B20581C9700A6B6DF /* ComponentCellDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentCellDTO.swift; sourceTree = "<group>"; };
+		C30D89662058201A00A6B6DF /* techona-buttons.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "techona-buttons.json"; sourceTree = "<group>"; };
+		C30D89682058202700A6B6DF /* TechonaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechonaModel.swift; sourceTree = "<group>"; };
+		C30D896A2058206F00A6B6DF /* TechonaButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechonaButton.swift; sourceTree = "<group>"; };
+		C30D896D205821AC00A6B6DF /* DeserelizableOperator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeserelizableOperator.swift; sourceTree = "<group>"; };
+		C30D8971205821E400A6B6DF /* CustomError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
+		C30D89742058225C00A6B6DF /* MockedButtonsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedButtonsRequest.swift; sourceTree = "<group>"; };
+		C30D89792058228200A6B6DF /* Requestable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Requestable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +124,7 @@
 				C30D89472058056A00A6B6DF /* Model */,
 				C30D89462058056A00A6B6DF /* Controller */,
 				C30D89452058056A00A6B6DF /* Network */,
+				C30D896F205821CC00A6B6DF /* Other */,
 				C30D89422058056A00A6B6DF /* Storyboard */,
 			);
 			path = Base;
@@ -117,6 +142,9 @@
 		C30D89452058056A00A6B6DF /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				C30D89732058221C00A6B6DF /* MockedRequest */,
+				C30D89782058228200A6B6DF /* RequestableProtocol */,
+				C30D896C2058219A00A6B6DF /* DeserelizableOperator */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -124,7 +152,7 @@
 		C30D89462058056A00A6B6DF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				C30D894D205805FE00A6B6DF /* HomeTableViewController.swift */,
+				C30D894F20581A0100A6B6DF /* Home */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -132,6 +160,9 @@
 		C30D89472058056A00A6B6DF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C30D89682058202700A6B6DF /* TechonaModel.swift */,
+				C30D896A2058206F00A6B6DF /* TechonaButton.swift */,
+				C30D89662058201A00A6B6DF /* techona-buttons.json */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -142,6 +173,67 @@
 				C30D89492058056A00A6B6DF /* AppDelegate.swift */,
 			);
 			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		C30D894F20581A0100A6B6DF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C30D895020581A0100A6B6DF /* HomeTableViewController.swift */,
+				C30D895220581A0F00A6B6DF /* HomeViewModel.swift */,
+				C30D895420581A1B00A6B6DF /* Components */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C30D895420581A1B00A6B6DF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C30D895520581A3B00A6B6DF /* CenterButtonCell.swift */,
+				C30D895720581A4900A6B6DF /* LeftButtonCell.swift */,
+				C30D895920581A5700A6B6DF /* RightButtonCell.swift */,
+				C30D895B20581C9700A6B6DF /* ComponentCellDTO.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		C30D896C2058219A00A6B6DF /* DeserelizableOperator */ = {
+			isa = PBXGroup;
+			children = (
+				C30D896D205821AC00A6B6DF /* DeserelizableOperator.swift */,
+			);
+			path = DeserelizableOperator;
+			sourceTree = "<group>";
+		};
+		C30D896F205821CC00A6B6DF /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				C30D8970205821E400A6B6DF /* CustomError */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		C30D8970205821E400A6B6DF /* CustomError */ = {
+			isa = PBXGroup;
+			children = (
+				C30D8971205821E400A6B6DF /* CustomError.swift */,
+			);
+			path = CustomError;
+			sourceTree = "<group>";
+		};
+		C30D89732058221C00A6B6DF /* MockedRequest */ = {
+			isa = PBXGroup;
+			children = (
+				C30D89742058225C00A6B6DF /* MockedButtonsRequest.swift */,
+			);
+			path = MockedRequest;
+			sourceTree = "<group>";
+		};
+		C30D89782058228200A6B6DF /* RequestableProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				C30D89792058228200A6B6DF /* Requestable.swift */,
+			);
+			path = RequestableProtocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +321,7 @@
 			files = (
 				C30D894B2058056A00A6B6DF /* Main.storyboard in Resources */,
 				C30D8929205804BF00A6B6DF /* Assets.xcassets in Resources */,
+				C30D89672058201A00A6B6DF /* techona-buttons.json in Resources */,
 				C30D894A2058056A00A6B6DF /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -247,8 +340,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C30D895120581A0100A6B6DF /* HomeTableViewController.swift in Sources */,
+				C30D895320581A0F00A6B6DF /* HomeViewModel.swift in Sources */,
+				C30D895620581A3B00A6B6DF /* CenterButtonCell.swift in Sources */,
+				C30D895C20581C9700A6B6DF /* ComponentCellDTO.swift in Sources */,
+				C30D895820581A4900A6B6DF /* LeftButtonCell.swift in Sources */,
+				C30D895A20581A5700A6B6DF /* RightButtonCell.swift in Sources */,
+				C30D896B2058206F00A6B6DF /* TechonaButton.swift in Sources */,
+				C30D8972205821E400A6B6DF /* CustomError.swift in Sources */,
+				C30D89752058225C00A6B6DF /* MockedButtonsRequest.swift in Sources */,
 				C30D894C2058056A00A6B6DF /* AppDelegate.swift in Sources */,
-				C30D894E205805FE00A6B6DF /* HomeTableViewController.swift in Sources */,
+				C30D897A2058228200A6B6DF /* Requestable.swift in Sources */,
+				C30D89692058202700A6B6DF /* TechonaModel.swift in Sources */,
+				C30D896E205821AC00A6B6DF /* DeserelizableOperator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
